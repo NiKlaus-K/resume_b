@@ -6,30 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr.Jiang</title>
+    <!-- 引入main.css -->
+    <link rel="stylesheet" href="./css/main.css">
     <!-- 引入jquery -->
-    <script src="/jquery-3.4.1.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link re    l="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 引入Bootstrap.CSS 文件 -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入）-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  -->
+    <!-- integrity 和 crossorigin是分别用来验证文件完整性和解决跨域问题的  -->
 
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script  type="text/javascript"> 
+
+    <script type="text/javascript">
         $("#text").value("2");
     </script>
 </head>
+
 <body>
-    <h1>Mr.Jiang</h1>
-    <div class="contain" value="1">
-        <input type="text" class="text" value="">
+    <div class="container" value="1">
+        <h1>Mr.Jiang</h1>
+        <input type="text" class="input-group-text" value="11111">
+        <input type="text" name="" id="" value="姜晓凯" />
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    1 of 2
+                </div>
+                <div class="col">
+                    2 of 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col">
+                    2 of 3
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
+            </div>
+        </div>
     </div>
 
+
+
+    <!-- 引入bootstrap依赖的js文件 -->
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>

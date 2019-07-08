@@ -26,6 +26,9 @@
     text-align: center;
 }
 
+
+/* 设置导航栏图标样式 */
+
 .navSpan {
     display: block;
     text-align: center;
@@ -37,9 +40,11 @@
     position: relative;
 }
 
+
+/* 设置标签内容区域样式 */
+
 .tab-content {
     /* 设置该区域与container左侧留出nav的宽度 */
-    margin-left: 100px;
     width: 100%;
     height: 100%;
 }
@@ -84,8 +89,6 @@
     line-height: 180%;
     font-size: 16px;
     padding-top: 10px;
-    padding-left: 90px;
-    padding-right: 90px;
     text-align: left;
 }
 
@@ -94,5 +97,80 @@
 }
 
 .download button {
-    width: 100%
+    width: 100%;
 }
+
+
+/* 设置移动端导航栏样式 */
+
+header {
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    background-color: #eeeeee;
+}
+
+.moreIcon-active {
+    background-color: #ffffff;
+}
+
+.avatar {
+    left: 10px;
+    top: 50%;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.logo-icon {
+    right: 10px;
+}
+
+.logo-area div span {
+    color: #286090;
+    font-size: 18px;
+}
+
+
+/* 设置移动端界面导航栏样式 */
+
+.links-area {
+    background-color: #fff;
+    text-align: center;
+}
+
+.links-area ul li {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.links-span {
+    display: inline;
+    text-align: center;
+}
+
+
+/* 媒体查询 */
+
+@media only screen and (max-width:768px) {
+    .container {
+        position: relative;
+        height: 100%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    .tab-content {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .tab-pane {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .tab-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1440px) {}

@@ -28,17 +28,59 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="visible-xs-block navbar-fixed-top">
+        <div class="logo-area row">
+            <div class="avatar col-xs-2 col-xs-offset-0 text-left">
+                <span class="btn glyphicon glyphicon-home"></span>
+            </div>
+            <div class="logo-icon col-xs-2 col-xs-offset-8 text-right">
+                <span class="btn glyphicon glyphicon-th-list" id="moreIcon"></span>
+                <!-- <span class="btn glyphicon glyphicon-remove" id="closeIcon"></span> -->
+            </div>
+        </div>
+        <div class="links-area   hide">
+            <ul class="nav nav-pills">
+                <li class="">
+                    <a href="#home">
+                        <span class="btn btn-xs glyphicon glyphicon-home links-span"></span><br>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#introduce">
+                        <span class="btn btn-xs glyphicon glyphicon-user links-span"></span> <br>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#position">
+                        <span class="btn btn-xs glyphicon glyphicon-bullhorn links-span"></span><br>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#works">
+                        <span class="btn btn-xs glyphicon glyphicon-briefcase links-span"></span> <br>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#project">
+                        <span class="btn btn-xs glyphicon glyphicon-tasks links-span"></span> <br>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#contact">
+                        <span class="btn btn-xs glyphicon glyphicon-phone-alt links-span"></span> <br>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="content">
         <!-- 设置container区域 -->
         <div class="container">
-            <div class="header-nav">
+            <div class="header-nav hidden-xs">
                 <!-- nav-stacked设置导航栏垂直显示
                      navbar设置导航栏居左显示，并留出内容区域，否则内容区始终另起一行 -->
-                <ul class="nav nav-tabs nav-pills nav-stacked  navbar-left mynav" role="tablist">
+                <ul class="nav nav-tabs nav-pills nav-stacked  navbar-left mynav " role="tablist">
                     <li role="presentation" class="active">
                         <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
                             <span class="glyphicon glyphicon-home navSpan"></span> <br>首页
@@ -80,7 +122,8 @@
                             <img src="image/photo.jpg " alt="">
                         </div>
                         <div class="name  col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">姜晓凯</div>
-                        <div class="introduction col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯</div>
+                        <div class="introduction col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">本人有一年项目实施工作经验，现意向转前端开发岗位，工作中有涉及jQuery开发，并自学前端HTML、CSS、JavaScript、BootStrap等相关知识。
+                        </div>
                         <div class="download col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
                             <button type="button" class="btn btn-primary" id="download">下载简历</button>
                         </div>

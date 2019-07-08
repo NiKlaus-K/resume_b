@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr.Jiang</title>
 
-    <!-- 引入main.css -->
-    <link rel="stylesheet" href="css/main.css">
+
 
     <!-- 引入jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -22,7 +21,8 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">  -->
     <!-- integrity 和 crossorigin是分别用来验证文件完整性和解决跨域问题的  -->
 
-
+    <!-- 引入main.css -->
+    <link rel="stylesheet" href="css/main.css">
 
 
 </head>
@@ -33,69 +33,84 @@
     </header>
 
     <main class="content">
-
+        <!-- 设置container区域 -->
         <div class="container">
-            <header>
-                <ul class="nav nav-tabs nav-pills nav-stacked" role="tablist">
+            <div class="header-nav">
+                <!-- nav-stacked设置导航栏垂直显示
+                     navbar设置导航栏居左显示，并留出内容区域，否则内容区始终另起一行 -->
+                <ul class="nav nav-tabs nav-pills nav-stacked  navbar-left mynav" role="tablist">
                     <li role="presentation" class="active">
                         <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-home"></span> 首页
+                            <span class="glyphicon glyphicon-home navSpan"></span> <br>首页
                         </a>
                     </li>
                     <li role="presentation">
                         <a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-user"></span> 个人信息
+                            <span class="glyphicon glyphicon-user navSpan"></span> <br>个人信息
                         </a>
                     </li>
                     <li role="presentation">
                         <a href="#position" aria-controls="position" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-bullhorn"></span> 求职方向
+                            <span class="glyphicon glyphicon-bullhorn navSpan"></span><br> 求职意向
                         </a>
                     </li>
                     <li role="presentation">
                         <a href="#works" aria-controls="works" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-briefcase"></span> 工作经历
+                            <span class="glyphicon glyphicon-briefcase navSpan"></span> <br>工作经历
                         </a>
                     </li>
                     <li role="presentation">
                         <a href="#project" aria-controls="project" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-tasks"></span> 项目介绍
+                            <span class="glyphicon glyphicon-tasks navSpan"></span> <br>项目介绍
                         </a>
                     </li>
                     <li role="presentation">
                         <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-phone-alt"></span> 联系方式
+                            <span class="glyphicon glyphicon-phone-alt navSpan"></span> <br>联系方式
                         </a>
-                    </li role="presentation">
+                    </li>
                 </ul>
-            </header>
-            <div class="tab-content">
-                <div role="tabpanel" class="home tab-pane active " id="home">
-                    <div>home</div>
+            </div>
+
+            <div class="tab-content row ">
+                <!-- fade渐变样式 -->
+                <div role="tabpanel" class="home tab-pane fade in active" id="home">
+                    <div class="tab-inner">
+                        <div class="photo">
+                            <img src="image/photo.jpg " alt="">
+                        </div>
+                        <div class="name  col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">姜晓凯</div>
+                        <div class="introduction col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯姓名：姜晓凯</div>
+                        <div class="download col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
+                            <button type="button" class="btn btn-primary" id="download">下载简历</button>
+                        </div>
+                    </div>
                 </div>
-                <div role="tabpanel" class="introduce tab-pane " id="introduce">
+                <div role="tabpanel" class="introduce tab-pane fade " id="introduce">
                     <div>introduce</div>
                 </div>
-                <div role="tabpanel" class="position tab-pane" id="position">
+                <div role="tabpanel" class="position tab-pane fade " id="position">
                     <div>position</div>
                 </div>
-                <div role="tabpanel" class="works tab-pane" id="works">
+                <div role="tabpanel" class="works tab-pane fade " id="works">
                     <div>works</div>
                 </div>
-                <div role="tabpanel" class="project tab-pane" id="project">
+                <div role="tabpanel" class="project tab-pane fade " id="project">
                     <div>project</div>
                 </div>
-                <div role="tabpanel" class="contact tab-pane" id="contact">
+                <div role="tabpanel" class="contact tab-pane fade " id="contact">
                     <div>contact</div>
                 </div>
             </div>
 
         </div>
     </main>
+
+
     <footer></footer>
     <script></script>
     <!-- 引入main.js -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js "></script>
 
 
 

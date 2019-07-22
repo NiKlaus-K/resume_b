@@ -8,7 +8,7 @@
     <title>Mr.Jiang</title>
 
 
-
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- 引入jquery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- 引入Bootstrap.CSS 文件 -->
@@ -31,16 +31,19 @@
     <header class="visible-xs-block navbar-fixed-top">
         <div class="logo-area row">
             <div class="avatar col-xs-2 col-xs-offset-0 text-left">
-                <span class="btn glyphicon glyphicon-home"></span>
+                <a href="#home">
+                    <span class="btn glyphicon glyphicon-home"></span>
+                </a>
             </div>
             <div class="logo-icon col-xs-2 col-xs-offset-8 text-right">
                 <span class="btn glyphicon glyphicon-th-list" id="moreIcon"></span>
                 <!-- <span class="btn glyphicon glyphicon-remove" id="closeIcon"></span> -->
             </div>
         </div>
-        <div class="links-area   hide">
+        <!-- 移动端导航栏 开始-->
+        <div class="links-area hide">
             <ul class="nav nav-pills">
-                <li class="">
+                <li class="presentation">
                     <a href="#home">
                         <span class="btn btn-xs glyphicon glyphicon-home links-span"></span><br>
                     </a>
@@ -72,82 +75,108 @@
                 </li>
             </ul>
         </div>
+        <!-- 移动端导航栏 结束-->
     </header>
 
-    <main class="content">
-        <!-- 设置container区域 -->
-        <div class="container">
-            <div class="header-nav hidden-xs">
-                <!-- nav-stacked设置导航栏垂直显示
+    <!-- 主要内容显示区 结束 -->
+    <main class="container">
+        <!-- PC端导航栏 开始 -->
+        <div class="header-nav  hidden-xs">
+            <!-- nav-stacked设置导航栏垂直显示
                      navbar设置导航栏居左显示，并留出内容区域，否则内容区始终另起一行 -->
-                <ul class="nav nav-tabs nav-pills nav-stacked  navbar-left mynav " role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-home navSpan"></span> <br>首页
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-user navSpan"></span> <br>个人信息
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#position" aria-controls="position" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-bullhorn navSpan"></span><br> 求职意向
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#works" aria-controls="works" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-briefcase navSpan"></span> <br>工作经历
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#project" aria-controls="project" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-tasks navSpan"></span> <br>项目介绍
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">
-                            <span class="glyphicon glyphicon-phone-alt navSpan"></span> <br>联系方式
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav nav-tabs nav-pills nav-stacked  navbar-left mynav " role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-home navSpan"></span> <br>首页
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-user navSpan"></span> <br>个人信息
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#position" aria-controls="position" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-bullhorn navSpan"></span><br> 求职意向
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#works" aria-controls="works" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-briefcase navSpan"></span> <br>工作经历
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#project" aria-controls="project" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-tasks navSpan"></span> <br>项目介绍
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">
+                        <span class="glyphicon glyphicon-phone-alt navSpan"></span> <br>联系方式
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- PC端导航栏 结束 -->
 
-            <div class="tab-content row ">
-                <!-- fade渐变样式 -->
-                <div role="tabpanel" class="home tab-pane fade in active" id="home">
-                    <div class="tab-inner">
-                        <div class="photo">
-                            <img src="image/photo.jpg " alt="">
-                        </div>
-                        <div class="name  col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">姜晓凯</div>
-                        <div class="introduction col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">本人有一年项目实施工作经验，现意向转前端开发岗位，工作中有涉及jQuery开发，并自学前端HTML、CSS、JavaScript、BootStrap等相关知识。
-                        </div>
-                        <div class="download col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
-                            <button type="button" class="btn btn-primary" id="download">下载简历</button>
-                        </div>
+        <!-- 主要内容显示区 开始 -->
+        <div class="tab-content row">
+            <!-- 首页 开始 -->
+            <!-- fade渐变样式 -->
+            <div role="tabpanel" class="home tab-pane fade in active  col-md-10   col-xs-10" id="home">
+
+                <div class="photo">
+                    <img src="image/photo.jpg " alt="">
+                </div>
+                <p class="name ">姜晓凯</p>
+                <p class="introduction">本人有一年项目实施工作经验，现意向转前端开发岗位，工作中有涉及jQuery开发，并自学前端HTML、CSS、JavaScript、BootStrap等相关知识。
+                </p>
+                <br>
+                <button type="button" class="btn btn-primary " id="download">下载简历</button>
+
+            </div>
+            <!-- 首页 结束 -->
+            <!-- introduce 开始 -->
+            <div role="tabpanel" class="introduce tab-pane fade" id="introduce">
+                <div>introduce</div>
+                <div class="tab-inner">
+                    <div class="photo">
+                        <img src="image/photo.jpg " alt="">
+                    </div>
+                    <div class="name  col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">姜晓凯</div>
+                    <div class="introduction col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">本人有一年项目实施工作经验，现意向转前端开发岗位，工作中有涉及jQuery开发，并自学前端HTML、CSS、JavaScript、BootStrap等相关知识。
+                    </div>
+                    <div class="download col-md-2 col-md-offset-5 col-xs-8 col-xs-offset-2">
+                        <button type="button" class="btn btn-primary" id="download">下载简历</button>
                     </div>
                 </div>
-                <div role="tabpanel" class="introduce tab-pane fade " id="introduce">
-                    <div>introduce</div>
-                </div>
-                <div role="tabpanel" class="position tab-pane fade " id="position">
-                    <div>position</div>
-                </div>
-                <div role="tabpanel" class="works tab-pane fade " id="works">
-                    <div>works</div>
-                </div>
-                <div role="tabpanel" class="project tab-pane fade " id="project">
-                    <div>project</div>
-                </div>
-                <div role="tabpanel" class="contact tab-pane fade " id="contact">
-                    <div>contact</div>
-                </div>
             </div>
+            <!-- introduce 结束 -->
 
+            <!-- position 开始 -->
+            <div role="tabpanel" class="position tab-pane fade " id="position">
+                <div>position</div>
+            </div>
+            <!-- position 开始 -->
+            <!-- works 开始 -->
+            <div role="tabpanel" class="works tab-pane fade " id="works">
+                <div>works</div>
+            </div>
+            <!-- works 结束 -->
+            <!-- project 开始 -->
+            <div role="tabpanel" class="project tab-pane fade " id="project">
+                <div>project</div>
+            </div>
+            <!-- project 结束 -->
+            <!-- contact 开始 -->
+            <div role="tabpanel" class="contact tab-pane fade " id="contact">
+                <div>contact</div>
+            </div>
+            <!-- contact 结束 -->
         </div>
+
     </main>
+    <!-- 主要内容显示区 结束 -->
 
 
     <footer></footer>
